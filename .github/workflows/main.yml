@@ -18,14 +18,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         root_file: cv.tex
-    
-    # - name: Upload PDF as artifact
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #     name: CV
-    #     path: cv.pdf
-    
-    # - name: Create Release
+
       id: create_release
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       uses: softprops/action-gh-release@v2

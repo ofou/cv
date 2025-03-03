@@ -1,0 +1,40 @@
+name: Build CV
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  build:
+    runs-on: Ubuntu latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up LaTeX
+      uses: xu-cheng/latex-action@v3
+      with:
+        root_file: cv.tex
+    
+    # - name: Upload PDF as artifact
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: CV
+    #     path: cv.pdf
+    
+    # - name: Create Release
+      id: create_release
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: softprops/action-gh-release@v2
+      with:
+        files: cv.pdf
+        name: CV Release ${{ github.sha }}
+        tag_name: release-${{ github.sha }}
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

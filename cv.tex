@@ -1,13 +1,17 @@
+% Current version on https://www.overleaf.com/project/67c5b769ac7a184967b24914
+
 \documentclass[11pt,letterpaper,roman]{moderncv}
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
-\usepackage[scale=0.8]{geometry}
+% Adjust page margins for better space utilization
+\usepackage[scale=0.75]{geometry}
+\setlength{\footskip}{136.00005pt}
 
 % Datos personales
 \name{Omar}{Olivares Urrutia}
 \title{Ingeniero de Inteligencia Artificial}
-\address{Providencia, RM, Chile}
+\address{Providencia, Chile}
 \phone[mobile]{+56~9~8381~0103}
 \email{omar@olivares.cl}
 \social[linkedin]{ofou}
@@ -20,9 +24,21 @@
 
 % Resumen Profesional
 \section{Resumen Profesional}
-\cvitem{}{Ingeniero de Software en \href{https://www.emergentmind.com}{Emergent Mind}, especializado en Inteligencia Artificial, Machine Learning y aplicaciones. He implementado sistemas RAG y fine-tuning para mejorar la calidad de las respuestas de modelos de lenguaje. Como divulgador científico y creador de contenidos independiente (en inglés), he producido videos virales que han superado las 200.000 vistas sobre contenidos técnicos acerca de interfaces cerebro-computador.}
+\cvitem{}{Ingeniero de Software en \href{https://emergentmind.com}{Emergent Mind}, especializado en Inteligencia Artificial, Machine Learning y aplicaciones. He implementado sistemas RAG y fine-tuning para mejorar la calidad de las respuestas de modelos de lenguaje. Como divulgador científico y creador de contenidos independiente (en inglés), he producido videos virales que han superado las 200.000 vistas sobre contenidos técnicos acerca de interfaces cerebro-computador.}
 
-% Experiencia Laboral
+% Educación (movida antes de experiencia laboral)
+\section{Educación}
+\cventry{2018 -- 2024}{Ingeniería Civil Informática}{\href{https://ucm.cl}{Universidad Católica del Maule}}{}{}{\textit{Especialización en procesamiento de lenguaje natural e Inteligencia Artificial.} \\ Minor en Composición Musical. Graduado con honores.}
+\cventry{2015 -- 2018}{Ingeniería Civil en Computación}{\href{https://utalca.cl}{Universidad de Talca}}{}{}{\textit{Enfoque en arquitectura de computadores, algoritmos y desarrollo de software.} \\ No finalizada, por cambio de Universidad.}
+
+% Publicaciones (relacionado con la educación y logros académicos)
+\section{Publicaciones}
+\cvitem{Título}{\emph{Optimización de Modelos de Lenguaje para la Prueba de Acceso a la Educación Superior (PAES) de Matemáticas en Chile: Una prueba de concepto}}
+\cvitem{Supervisores}{
+  \href{https://www.linkedin.com/in/xaviera-lopez-cortes}{Dra. Xaviera A. Lopez Cortes}, \href{https://www.linkedin.com/in/maria-aravena-díaz}{Dra. Maria D. Aravena Diaz} y \href{https://investigadores.anid.cl/es/public_search/researcher?id=9261}{Dr. Sergio I. Hernández Alvarez}
+}
+
+% Experiencia Laboral (tras educación y publicaciones académicas)
 \section{Experiencia Laboral}
 \cventry{Febrero 2024 -- Presente}{Ingeniero de Inteligencia Artificial}{\href{https://www.emergentmind.com}{Emergent Mind}}{Carolina del Norte, Estados Unidos}{}{%
 \begin{itemize}%
@@ -34,7 +50,7 @@
 \item Conceptualizo y prototipo características innovadoras de IA para impulsar el crecimiento de la plataforma.
 \end{itemize}}
 
-\cventry{Septiembre 2021 -- Enero 2025}{Desarrollador de Contenido Técnico}{\href{https://www.neurapod.com}{Neura Pod}}{San Diego, California, Estados Unidos}{}{%
+\cventry{Septiembre 2021 -- Enero 2025}{Desarrollador de Contenido Técnico}{\href{https://youtube.com/@NeuraPod}{NeuraPod}}{San Diego, Estados Unidos}{}{%
 \begin{itemize}%
 \item Produje contenido sobre neurotecnología e IA, contribuyendo al crecimiento del canal a más de 80.000 suscriptores en YouTube.
 \item Gestioné la producción completa: ideación, guiones, grabación de locuciones, edición y distribución de videos.
@@ -43,51 +59,78 @@
 \item Expandí la presencia de Neura Pod en plataformas de redes sociales.
 \end{itemize}}
 
-\cventry{Julio 2021 -- Septiembre 2021}{Pasante}{\href{https://www.neurapod.com}{Neura Pod}}{San Diego, California, Estados Unidos}{}{Inicié mi carrera en creación de contenido técnico, aprendiendo las bases de la producción audiovisual y la comunicación científica.}
+\cventry{Julio 2021 -- Septiembre 2021}{Pasante}{\href{https://youtube.com/@NeuraPod}{Neura Pod}}{San Diego, Estados Unidos}{}{Inicié mi carrera en creación de contenido técnico, aprendiendo las bases de la producción audiovisual y la comunicación científica.}
 
-\cventry{2021}{Ingeniero de Software}{\href{https://www.rayo.com}{Rayo}}{Remoto}{}{Optimicé el uso de MongoDB y SQL, reduciendo costos operativos en un 15\% mediante técnicas avanzadas de indexación y caching.}
+\cventry{2021}{Ingeniero de Software}{\href{https://www.rayo.cl}{Rayo}}{Remoto}{}{Optimicé el uso de MongoDB y SQL, reduciendo costos operativos en un 15\% mediante técnicas avanzadas de indexación y caching.}
 
-\cventry{2020}{Ingeniero de Software}{\href{https://www.suncast.cl}{Suncast}}{Las Condes, Región Metropolitana de Santiago, Chile}{}{Ayudé a reconstruir la plataforma en una arquitectura de microservicios, mejorando la escalabilidad y reduciendo el tiempo de respuesta en AWS.}
+\cventry{2020}{Ingeniero de Software}{\href{https://www.suncast.cl}{Suncast}}{Las Condes, Chile}{}{Ayudé a reconstruir la plataforma en una arquitectura de microservicios, mejorando la escalabilidad y reduciendo el tiempo de respuesta en AWS.}
 
-\cventry{2016 -- 2018}{Asistente de Soporte en TI}{\href{https://www.utalca.cl}{Universidad de Talca}}{Curicó, Región del Maule, Chile}{}{Resolví problemas de red y brindé soporte técnico a los estudiantes, mejorando la eficiencia del equipo de TI.}
+\cventry{2016 -- 2018}{Asistente de Soporte en TI}{\href{https://www.utalca.cl}{Universidad de Talca}}{Curicó, Chile}{}{Resolví problemas de red y brindé soporte técnico a los estudiantes, mejorando la eficiencia del equipo de TI.}
 
-\cventry{2008 -- 2013}{Productor Musical}{Ableton}{Valencia, Comunidad Valenciana, España}{}{Composición, producción, grabación, mezcla y masterización de pistas para artistas en Valencia, España.}
+\cventry{2008 -- 2013}{Productor Musical}{Ableton}{Valencia, España}{}{Composición, producción, grabación, mezcla y masterización de pistas para artistas en Valencia, España.}
 
-% Educación
-\section{Educación}
-\cventry{2018 -- 2024}{Ingeniero Civil Informático}{\href{https://portal.ucm.cl}{Universidad Católica del Maule}}{}{}{\textit{Especialización en procesamiento de lenguaje natural e Inteligencia Artificial.} Desarrollé un fine-tuning del modelo de lenguaje gpt-3.5-turbo para ayudar a los estudiantes de la PAES a través de tutorías personalizadas como tesis de pregrado. Nota 7.0}
-\cventry{2015 -- 2018}{Ingeniero Civil en Computación}{\href{https://www.utalca.cl}{Universidad de Talca}}{}{}{\textit{Enfoque en arquitectura de computadores, algoritmos y desarrollo de software.} Estuve estudiando algunos años en la Universidad de Talca, pero por motivos familiares me cambié a la Universidad Católica del Maule.}
+% Proyectos Destacados (junto con experiencia profesional)
+\section{Proyectos}
+\cventry{2023 -- presente}{Creador}{\href{https://github.com/ofou/graham-essays}{Graham Essays}}{Proyecto Open Source}{}{
+\begin{itemize}
+\item Desarrollé un programa que automatiza la creación de libros electrónicos (EPUB) a partir de contenido web.
+\item Alcanzó la portada de Hacker News en su lanzamiento (\href{https://news.ycombinator.com/item?id=32465435}{ver discusión}).
+\item Tecnologías: Python, web scraping, procesamiento de texto y generación de EPUB.
+\end{itemize}
+}
 
-% Competencias Técnicas
-\section{Competencias Técnicas}
-\cvitem{\textbf{Lenguajes}}{Python, SQL, JavaScript, LaTeX}
-\cvitem{\textbf{Frameworks}}{PyTorch, Hugging Face, React, Tinygrad, MLX}
-\cvitem{\textbf{Tools}}{Git, Docker, CI/CD}
-\cvitem{\textbf{Big Data}}{Azure, GCP, AWS, MongoDB, PostgreSQL}
-\cvitem{\textbf{IA/ML}}{RAG, LLMs, NLP, Computer Vision, Langchain, Streamlit}
-\cvitem{\textbf{Otros}}{Jupyter, Linux}
-
-% Proyectos Destacados
-\section{Proyectos Destacados}
-\cventry{2023 -- presente}{Creador}{\href{https://github.com/ofou/graham-essays}{Graham Essays}}{Proyecto Open Source}{}{Desarrollé un programa que ayuda a la creación de un libro electrónico (EPUB) a partir de una página web de manera automatizada. Llegó al frontpage de Hacker News en su lanzamiento https://news.ycombinator.com/item?id=32465435}
-
-% Idiomas
+% Idiomas y Certificaciones (agrupados juntos)
 \section{Idiomas}
-\cvitemwithcomment{Español}{Nativo}{}
-\cvitemwithcomment{Inglés}{C2 Proficiente}{EFSET 77/100}
-\cvitemwithcomment{Chino Mandarín}{Básico}{En progreso}
+\cvitemwithcomment{Español}{Nativo}{\cvskill{5}}
+\cvitemwithcomment{Inglés}{C2 Proficiente}{\cvskill{5} EFSET 77/100}
+\cvitemwithcomment{Chino Mandarín}{Básico}{\cvskill{1} En progreso}
 
-% Certificaciones
 \section{Certificaciones}
 \cvlistitem{EFSET English Certificate C2 Proficient (77/100)}
 % \cvlistitem{Deep Learning Specialization - Coursera/Andrew Ng}
 % \cvlistitem{AWS Certified Machine Learning - Specialty}
 % \cvlistitem{Google Cloud Professional Data Engineer}
 
-% Intereses
-\section{Intereses}
-\cvitem{}{Producción musical, contribuciones a proyectos de código abierto, aprendizaje de mandarín, viajes, neurotecnología e interfaces cerebro-máquina.}
+\break
 
+% Versión más sucinta del Skill Matrix
+\section{Competencias Técnicas}
 
+\cvskillhead[-0.1em] 
+
+% Lenguajes y Tecnologías Core
+\cvskillentry*[0.5em]{Lenguajes}{5}{Python}{6}{Desarrollo ML/AI, análisis de datos}
+\cvskillentry{}{4}{SQL}{5}{Diseño y optimización de consultas}
+\cvskillentry{}{4}{Bash/Shell}{5}{Automatización y scripting}
+
+% Frameworks y ML/AI
+\cvskillentry*[0.5em]{IA}{5}{RAG/LLMs}{3}{Implementación, fine-tuning, evaluación}
+\cvskillentry{}{4}{PyTorch/HuggingFace}{3}{Modelos de deep learning}
+\cvskillentry{}{4}{NLP}{4}{Análisis semántico, embeddings}
+\cvskillentry{}{3}{LLM Evaluation}{2}{Métricas y benchmarks para modelos}
+
+% Cloud y Datos
+\cvskillentry*[0.5em]{Infra}{4}{Azure/AWS/GCP}{3}{Despliegue de soluciones ML/AI}
+\cvskillentry{}{4}{MongoDB/PostgreSQL}{4}{Modelado y optimización}
+\cvskillentry{}{4}{Git/Github}{5}{CI/CD, colaboración}
+\cvskillentry{}{4}{Linux}{5}{Administración, customización}
+
+% Herramientas y Frameworks
+\cvskillentry*[0.5em]{Tools}{4}{LangChain/LlamaIndex}{2}{Aplicaciones con LLMs}
+\cvskillentry{}{3}{Docker/Compose}{3}{Contenedores, orquestación}
+\cvskillentry{}{4}{LaTeX/Jupyter}{4}{Documentación técnica}
+\cvskillentry{}{3}{JS/React}{3}{Desarrollo frontend}
+
+\section{Habilidades Blandas}
+
+\cvdoubleitem{\textit{Resolución de problemas}}{\small Desarrollo soluciones innovadoras para desafíos de IA con enfoque analítico.}{\textit{Comunicación}}{\small Transmito conceptos técnicos complejos a audiencias diversas, creando contenido educativo viral.}
+
+\cvdoubleitem{\textit{Colaboración}}{\small Trabajo eficazmente en equipos multidisciplinarios y distribuidos.}{\textit{Adaptabilidad}}{\small Me adapto rápidamente a nuevas tecnologías y entornos de trabajo remoto.}
+
+\cvdoubleitem{\textit{Auto-\\aprendizaje}}{\small Adquiero continuamente conocimientos en tecnologías emergentes de IA y desarrollo.}{\textit{Creatividad}}{\small Genero ideas innovadoras y soluciones creativas para problemas técnicos complejos.}
+
+\section{Referencias}
+
+\cvitem{}{Disponibles a petición.}
 
 \end{document}
